@@ -1,0 +1,13 @@
+table {
+  width: 80%;
+  margin: auto;
+}
+
+tr {
+  height: 20px;
+  border: white 2px;
+}
+
+body {
+  background-color: #eee;
+}
