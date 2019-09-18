@@ -17,6 +17,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="design.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -50,10 +56,10 @@
       </div>
       <div class="row">
         <div class="help">Tap the icons to change the filter</div>
-        <table class="table table-borderless table-sm">
+        <table class="table table-bordered table-sm">
           <thead>
             <tr>
-              <th scope="col" class="center-cell">
+              <th scope="" class="center-cell">
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
@@ -85,7 +91,12 @@
                 /><br />PRECIPITATION
               </th>
               <th scope="col" class="center-cell d-none d-lg-table-cell">
-                <img class="header-img mx-auto d-block" src="beer.svg" alt="" />
+                <img
+                  id="beerClick"
+                  class="header-img mx-auto d-block"
+                  src="beer.svg"
+                  alt=""
+                />
                 <br />BEER PRICE
               </th>
               <th scope="col" class="center-cell d-none d-lg-table-cell">
@@ -104,52 +115,7 @@
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th class="team-image-city" scope="row">
-                <img class="teamlogo" src="Kansas.gif" alt="Kansas" />
-                <span class="city-name">KANSAS CITY</span><br /><span
-                  class="team-name"
-                  >Chiefs</span
-                >
-              </th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td class="d-none d-lg-table-cell">Mark</td>
-              <td class="d-none d-lg-table-cell">Otto</td>
-              <td class="d-none d-lg-table-cell">@mdo</td>
-            </tr>
-            <tr>
-              <th class="team-image-city" scope="row">
-                <img class="teamlogo" src="Cincinnati.gif" alt="Cincinnati" />
-
-                <span class="city-name">Cincinnaty</span><br /><span
-                  class="team-name"
-                  >Bengals</span
-                >
-              </th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td class="d-none d-lg-table-cell">Mark</td>
-              <td class="d-none d-lg-table-cell">Otto</td>
-              <td class="d-none d-lg-table-cell">@mdo</td>
-            </tr>
-            <tr>
-              <th class="team-image-city" scope="row">
-                <img class="teamlogo" src="Arizona.gif" alt="Arizona" />
-                <span class="city-name">Arizona</span><br />
-                <span class="team-name">Cardinals</span>
-              </th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td class="d-none d-lg-table-cell">Mark</td>
-              <td class="d-none d-lg-table-cell">Otto</td>
-              <td class="d-none d-lg-table-cell">@mdo</td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </div>
@@ -157,54 +123,121 @@
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script>
       // set the bilinear color scale
+
       var cellColor = d3.scale
         .linear()
-        .domain([1, 21, 41])
+        .domain([41, 21, 1])
         .range(["#b8327d", "#f4f4f4", "#689736"]);
       console.log(cellColor(41));
 
-      d3.csv("ranks.csv", function(error, states) {
-        if (error) throw error;
+      var sort_key = "total_rank";
 
-        var ages = d3.keys(states[0]).filter(function(key) {
-          return key != "State" && key != "Total";
-        });
+      // bind on click events to columns
+      beerColumn = d3.select("#beerClick");
 
-        d3.selectAll("thead td")
-          .data(ages)
-          .on("click", function(k) {
-            tr.sort(function(a, b) {
-              return b[k] / b.Total - a[k] / a.Total;
-            });
+      beerColumn.on("click", function() {
+        console.log("BEER");
+      });
+
+      // function to sort the data AND populate the table
+
+      function parse(sort_key) {
+        d3.csv("ranks.csv", function(error, data) {
+          if (error) throw error;
+
+          // the keys are the header rows
+          var keys = d3.keys(data[0]);
+          console.log(keys);
+
+          var headers = keys.filter(function(key) {
+            return key != "id" && key != "sum_of_ranks" && key != "City";
           });
 
+          console.log("headers:");
+          console.log(headers);
+
+          data = data.sort(function(a, b) {
+            return +a[sort_key] - +b[sort_key];
+          });
+
+          render(data);
+        });
+      }
+
+      // RENDER TABLE
+      function render(data) {
+        //sort the data by overall ranking
+
+        // append the rows
         var tr = d3
           .select("tbody")
           .selectAll("tr")
-          .data(states)
+          .data(data)
           .enter()
           .append("tr");
 
-        tr.append("th").text(function(d) {
-          return d.State;
+        // for each column append a th
+
+        tr.append("th").html(function(d) {
+          console.log(d);
+          first_column = `<img class="teamlogo" src="Arizona.gif" alt="Arizona" />
+                <span class="city-name">${d.City} ${d.total_rank}</span><br />
+                <span class="team-name">${d.team}</span>
+              </th>`;
+          return first_column;
         });
 
-        tr.selectAll("td")
-          .data(function(d) {
-            return ages.map(function(k) {
-              return d[k] / d.Total;
-            });
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.touchdowns_rank;
           })
-          .enter()
-          .append("td")
-          .append("svg")
-          .attr("width", 71)
-          .attr("height", 12)
-          .append("rect")
-          .attr("height", 12)
-          .attr("width", function(d) {
-            return d * 71;
-          });
+          .style("background-color", d => cellColor(d.touchdowns_rank))
+          .style("font-size", 0);
+
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.ticket_rank;
+          })
+          .style("background-color", d => cellColor(d.ticket_rank))
+          .style("font-size", 0);
+
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.precipitation_rank;
+          })
+          .style("background-color", d => cellColor(d.precipitation_rank))
+          .style("font-size", 0);
+
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.beer_rank;
+          })
+          .style("background-color", d => cellColor(d.beer_rank))
+          .style("font-size", 0);
+
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.mcd_rank;
+          })
+          .style("background-color", d => cellColor(d.mcd_rank))
+          .style("font-size", 0);
+
+        tr.append("th")
+          .text(function(d) {
+            console.log(d);
+            return d.pollution_rank;
+          })
+          .style("background-color", d => cellColor(d.pollution_rank))
+          .style("font-size", 0);
+      }
+
+      $(document).ready(function() {
+        parse(sort_key);
       });
     </script>
   </body>

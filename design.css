@@ -141,3 +141,7 @@ p.lead {
   margin-right: 0.4em;
   font-size: 0.9em;
 }
+
+table.table-bordered > tbody > td {
+  border: 11px solid white;
+}

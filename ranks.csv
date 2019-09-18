@@ -1,0 +1,42 @@
+id,Team,City,touchdowns_rank,ticket_rank,precipitation_rank,beer_rank,mcd_rank,pollution_rank,sum_of_ranks,total_rank
+0,Arizona Cardinals,Glendale,39.0,15.0,1.0,12.0,26.0,39.0,132.0,22.0
+1,Atlanta Falcons,Atlanta,15.0,20.0,36.0,17.0,16.0,30.0,134.0,25.0
+2,BC Lions,Vancouver,29.0,5.0,31.0,29.0,31.0,3.0,128.0,20.0
+3,Baltimore Ravens,Baltimore,22.0,22.0,26.0,26.0,3.0,31.0,130.0,21.0
+4,Buffalo Bills,Orchard Park,37.0,10.0,25.0,12.0,16.0,10.0,110.0,11.0
+5,Calgary Stampeders,Calgary,7.0,9.0,3.0,29.0,31.0,5.0,84.0,4.0
+6,Carolina Panthers,Charlotte,16.0,16.0,32.0,26.0,1.0,7.0,98.0,6.0
+7,Chicago Bears,Chicago,13.0,40.0,20.0,26.0,16.0,27.0,142.0,27.0
+8,Cincinnati Bengals,Cincinnati,19.0,17.0,28.0,12.0,16.0,23.0,115.0,13.0
+9,Cleveland Browns,Cleveland,20.0,30.0,22.0,12.0,16.0,16.0,116.0,14.0
+10,Dallas Cowboys,Arlington,24.0,31.0,23.0,14.0,26.0,26.0,144.0,29.0
+11,Denver Broncos,Denver,27.0,37.0,5.0,26.0,26.0,22.0,143.0,28.0
+12,Detroit Lions,Detroit,32.0,26.0,17.0,1.0,16.0,35.0,127.0,19.0
+13,Edmonton Eskimos,Edmonton,13.0,2.0,4.0,16.0,5.0,9.0,49.0,1.0
+14,Green Bay Packers,Green Bay,25.0,39.0,12.0,2.0,4.0,2.0,84.0,4.0
+15,Hamilton Tiger-Cats,Hamilton,11.0,3.0,14.0,13.0,31.0,34.0,106.0,8.0
+16,Houston Texans,Houston,22.0,25.0,35.0,26.0,26.0,38.0,172.0,37.0
+17,Indianapolis Colts,Indianapolis,5.0,11.0,29.0,12.0,2.0,28.0,87.0,5.0
+18,Jacksonville Jaguars,Jacksonville,41.0,12.0,40.0,12.0,16.0,12.0,133.0,24.0
+19,Kansas City Chiefs,Kansas City,1.0,28.0,22.0,26.0,16.0,14.0,107.0,9.0
+20,Los Angeles Chargers,Carson,7.0,33.0,7.0,36.0,26.0,41.0,150.0,31.0
+21,Los Angeles Rams,Los Angeles,2.0,13.0,7.0,36.0,26.0,41.0,125.0,18.0
+22,Miami Dolphins,Miami Gardens,28.0,27.0,39.0,36.0,32.0,24.0,186.0,38.0
+23,Minnesota Vikings,Minneapolis,24.0,24.0,15.0,31.0,16.0,4.0,114.0,12.0
+24,Montreal Alouettes,Montreal,38.0,4.0,16.0,15.0,31.0,13.0,117.0,15.0
+25,New England Patriots,Foxborough,4.0,41.0,34.0,41.0,38.0,6.0,164.0,35.0
+26,New Orleans Saints,New Orleans,3.0,38.0,41.0,12.0,16.0,32.0,142.0,27.0
+27,New York Giants,East Rutherford,27.0,14.0,38.0,41.0,41.0,37.0,198.0,40.0
+28,New York Jets,East Rutherford,34.0,18.0,38.0,41.0,41.0,37.0,209.0,41.0
+29,Oakland Raiders,Oakland,35.0,29.0,10.0,31.0,38.0,15.0,158.0,33.0
+30,Ottawa Redblacks,Ottawa,19.0,6.0,13.0,29.0,31.0,1.0,99.0,7.0
+31,Philadelphia Eagles,Philadelphia,19.0,35.0,27.0,26.0,26.0,33.0,166.0,36.0
+32,Pittsburgh Steelers,Pittsburgh,11.0,34.0,19.0,12.0,18.0,29.0,123.0,16.0
+33,San Francisco 49ers,Santa Clara,32.0,23.0,10.0,38.0,41.0,18.0,162.0,34.0
+34,Saskatchewan Roughriders,Regina,40.0,8.0,2.0,18.0,17.0,25.0,110.0,11.0
+35,Seattle Seahawks,Seattle,11.0,36.0,18.0,36.0,38.0,8.0,147.0,30.0
+36,Tampa Bay Buccaneers,Tampa,15.0,19.0,30.0,12.0,38.0,11.0,125.0,18.0
+37,Tennessee Titans,Nashville,34.0,22.0,33.0,26.0,16.0,21.0,152.0,32.0
+38,Toronto Argonauts,Toronto,32.0,1.0,11.0,37.0,33.0,19.0,133.0,24.0
+39,Washington Redskins,Landover,37.0,32.0,24.0,36.0,38.0,20.0,187.0,39.0
+40,Winnipeg Blue Bombers,Winnipeg,8.0,7.0,8.0,3.0,19.0,17.0,62.0,2.0
