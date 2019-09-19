@@ -59,7 +59,7 @@
         <table class="table table-bordered table-sm">
           <thead>
             <tr>
-              <th scope="" class="center-cell">
+              <th scope="" class="center-cell" id="generalClick">
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
@@ -67,7 +67,12 @@
                 /><br />
                 BEST OVERALL
               </th>
-              <th scope="col" class="center-cell">
+              <th
+                style="width: 13.33%"
+                scope="col"
+                class="center-cell"
+                id="touchdownsClick"
+              >
                 <img
                   class="header-img mx-auto d-block"
                   src="american_football.svg"
@@ -75,7 +80,12 @@
                 /><br />
                 TOUCHDOWNS
               </th>
-              <th scope="col" class="center-cell">
+              <th
+                style="width: 13.33%"
+                scope="col"
+                class="center-cell"
+                id="ticketsClick"
+              >
                 <img
                   class="header-img mx-auto d-block"
                   src="ticket.svg"
@@ -83,30 +93,45 @@
                 /><br />
                 TICKET PRICE
               </th>
-              <th scope="col" class="center-cell">
+              <th
+                scope="col"
+                class="center-cell"
+                id="precipitationClick"
+                style="width: 13.33%"
+              >
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
                   alt="overall"
                 /><br />PRECIPITATION
               </th>
-              <th scope="col" class="center-cell d-none d-lg-table-cell">
-                <img
-                  id="beerClick"
-                  class="header-img mx-auto d-block"
-                  src="beer.svg"
-                  alt=""
-                />
+              <th
+                scope="col"
+                class="center-cell d-none d-md-table-cell"
+                id="beerClick"
+                style="width: 13.33%"
+              >
+                <img class="header-img mx-auto d-block" src="beer.svg" alt="" />
                 <br />BEER PRICE
               </th>
-              <th scope="col" class="center-cell d-none d-lg-table-cell">
+              <th
+                scope="col"
+                class="center-cell d-none d-md-table-cell"
+                id="mcdClick"
+                style="width: 13.33%"
+              >
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
                   alt="overall"
                 /><br />McMEAL
               </th>
-              <th scope="col" class="center-cell d-none d-lg-table-cell">
+              <th
+                scope="col"
+                class="center-cell hidden-xs hidden-sm""
+                id="pollutionClick"
+                style="width: 13.33%"
+              >
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
@@ -130,13 +155,56 @@
         .range(["#b8327d", "#f4f4f4", "#689736"]);
       console.log(cellColor(41));
 
-      var sort_key = "total_rank";
+      let sort_key = "total_rank";
 
       // bind on click events to columns
       beerColumn = d3.select("#beerClick");
 
       beerColumn.on("click", function() {
-        console.log("BEER");
+        let sort_key = "beer_rank";
+        parse(sort_key);
+      });
+
+      precipitationColumn = d3.select("#precipitationClick");
+
+      precipitationColumn.on("click", function() {
+        let sort_key = "precipitation_rank";
+        parse(sort_key);
+      });
+
+      touchdownsColumn = d3.select("#touchdownsClick");
+
+      touchdownsColumn.on("click", function() {
+        let sort_key = "touchdowns_rank";
+        parse(sort_key);
+      });
+
+      ticketColumn = d3.select("#ticketsClick");
+
+      ticketColumn.on("click", function() {
+        let sort_key = "ticket_rank";
+        parse(sort_key);
+      });
+
+      generalColumn = d3.select("#generalClick");
+
+      generalColumn.on("click", function() {
+        let sort_key = "total_rank";
+        parse(sort_key);
+      });
+
+      mcdColumn = d3.select("#mcdClick");
+
+      mcdColumn.on("click", function() {
+        let sort_key = "mcd_rank";
+        parse(sort_key);
+      });
+
+      pollutionColumn = d3.select("#pollutionClick");
+
+      pollutionColumn.on("click", function() {
+        let sort_key = "pollution_rank";
+        parse(sort_key);
       });
 
       // function to sort the data AND populate the table
@@ -167,7 +235,10 @@
       // RENDER TABLE
       function render(data) {
         //sort the data by overall ranking
-
+        var tr = d3
+          .select("tbody")
+          .selectAll("tr")
+          .remove();
         // append the rows
         var tr = d3
           .select("tbody")
@@ -182,7 +253,7 @@
           console.log(d);
           first_column = `<img class="teamlogo" src="Arizona.gif" alt="Arizona" />
                 <span class="city-name">${d.City} ${d.total_rank}</span><br />
-                <span class="team-name">${d.team}</span>
+                <span class="team-name">${d.Team}</span>
               </th>`;
           return first_column;
         });
