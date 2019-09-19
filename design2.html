@@ -30,7 +30,7 @@
         <div id="header">
           <h1 class="title">What's the best city to be an <br />NFL fan?</h1>
           <h3 class="grey">Based on touchdowns, beer, and ticket prices.</h3>
-          <p class="lead">
+          <p class="lead hide">
             Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Dignissimos laboriosam minus culpa There's more to sports than
             winning. Beer and food are also key...
@@ -59,7 +59,7 @@
         <table class="table table-bordered table-sm">
           <thead>
             <tr>
-              <th scope="" class="center-cell" id="generalClick">
+              <th scope="col" class="center-cell first-column" id="generalClick">
                 <img
                   class="header-img mx-auto d-block"
                   src="star.svg"
@@ -68,9 +68,9 @@
                 BEST OVERALL
               </th>
               <th
-                style="width: 13.33%"
+                
                 scope="col"
-                class="center-cell"
+                class="center-cell other-column"
                 id="touchdownsClick"
               >
                 <img
@@ -81,9 +81,9 @@
                 TOUCHDOWNS
               </th>
               <th
-                style="width: 13.33%"
+                
                 scope="col"
-                class="center-cell"
+                class="center-cell header other-column"
                 id="ticketsClick"
               >
                 <img
@@ -95,46 +95,46 @@
               </th>
               <th
                 scope="col"
-                class="center-cell"
+                class="center-cell other-column"
                 id="precipitationClick"
-                style="width: 13.33%"
+                
               >
                 <img
                   class="header-img mx-auto d-block"
-                  src="star.svg"
+                  src="rain.svg"
                   alt="overall"
                 /><br />PRECIPITATION
               </th>
               <th
                 scope="col"
-                class="center-cell d-none d-md-table-cell"
+                class="center-cell d-none d-lg-table-cell other-column"
                 id="beerClick"
-                style="width: 13.33%"
+                
               >
-                <img class="header-img mx-auto d-block" src="beer.svg" alt="" />
+                <img class="header-img mx-auto d-block " src="beer.svg" alt="" />
                 <br />BEER PRICE
               </th>
               <th
                 scope="col"
-                class="center-cell d-none d-md-table-cell"
+                class="center-cell d-none d-lg-table-cell other-column"
                 id="mcdClick"
-                style="width: 13.33%"
+                
               >
                 <img
                   class="header-img mx-auto d-block"
-                  src="star.svg"
+                  src="burger.svg"
                   alt="overall"
                 /><br />McMEAL
               </th>
               <th
                 scope="col"
-                class="center-cell hidden-xs hidden-sm""
+                class="center-cell d-none d-lg-table-cell other-column"
                 id="pollutionClick"
-                style="width: 13.33%"
+                
               >
                 <img
                   class="header-img mx-auto d-block"
-                  src="star.svg"
+                  src="pollution.svg"
                   alt="overall"
                 /><br />POLLUTION
               </th>
@@ -146,170 +146,8 @@
     </div>
 
     <script src="//d3js.org/d3.v3.min.js"></script>
-    <script>
-      // set the bilinear color scale
-
-      var cellColor = d3.scale
-        .linear()
-        .domain([41, 21, 1])
-        .range(["#b8327d", "#f4f4f4", "#689736"]);
-      console.log(cellColor(41));
-
-      let sort_key = "total_rank";
-
-      // bind on click events to columns
-      beerColumn = d3.select("#beerClick");
-
-      beerColumn.on("click", function() {
-        let sort_key = "beer_rank";
-        parse(sort_key);
-      });
-
-      precipitationColumn = d3.select("#precipitationClick");
-
-      precipitationColumn.on("click", function() {
-        let sort_key = "precipitation_rank";
-        parse(sort_key);
-      });
-
-      touchdownsColumn = d3.select("#touchdownsClick");
-
-      touchdownsColumn.on("click", function() {
-        let sort_key = "touchdowns_rank";
-        parse(sort_key);
-      });
-
-      ticketColumn = d3.select("#ticketsClick");
-
-      ticketColumn.on("click", function() {
-        let sort_key = "ticket_rank";
-        parse(sort_key);
-      });
-
-      generalColumn = d3.select("#generalClick");
-
-      generalColumn.on("click", function() {
-        let sort_key = "total_rank";
-        parse(sort_key);
-      });
-
-      mcdColumn = d3.select("#mcdClick");
-
-      mcdColumn.on("click", function() {
-        let sort_key = "mcd_rank";
-        parse(sort_key);
-      });
-
-      pollutionColumn = d3.select("#pollutionClick");
-
-      pollutionColumn.on("click", function() {
-        let sort_key = "pollution_rank";
-        parse(sort_key);
-      });
-
-      // function to sort the data AND populate the table
-
-      function parse(sort_key) {
-        d3.csv("ranks.csv", function(error, data) {
-          if (error) throw error;
-
-          // the keys are the header rows
-          var keys = d3.keys(data[0]);
-          console.log(keys);
-
-          var headers = keys.filter(function(key) {
-            return key != "id" && key != "sum_of_ranks" && key != "City";
-          });
-
-          console.log("headers:");
-          console.log(headers);
-
-          data = data.sort(function(a, b) {
-            return +a[sort_key] - +b[sort_key];
-          });
-
-          render(data);
-        });
-      }
-
-      // RENDER TABLE
-      function render(data) {
-        //sort the data by overall ranking
-        var tr = d3
-          .select("tbody")
-          .selectAll("tr")
-          .remove();
-        // append the rows
-        var tr = d3
-          .select("tbody")
-          .selectAll("tr")
-          .data(data)
-          .enter()
-          .append("tr");
-
-        // for each column append a th
-
-        tr.append("th").html(function(d) {
-          console.log(d);
-          first_column = `<img class="teamlogo" src="Arizona.gif" alt="Arizona" />
-                <span class="city-name">${d.City} ${d.total_rank}</span><br />
-                <span class="team-name">${d.Team}</span>
-              </th>`;
-          return first_column;
-        });
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.touchdowns_rank;
-          })
-          .style("background-color", d => cellColor(d.touchdowns_rank))
-          .style("font-size", 0);
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.ticket_rank;
-          })
-          .style("background-color", d => cellColor(d.ticket_rank))
-          .style("font-size", 0);
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.precipitation_rank;
-          })
-          .style("background-color", d => cellColor(d.precipitation_rank))
-          .style("font-size", 0);
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.beer_rank;
-          })
-          .style("background-color", d => cellColor(d.beer_rank))
-          .style("font-size", 0);
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.mcd_rank;
-          })
-          .style("background-color", d => cellColor(d.mcd_rank))
-          .style("font-size", 0);
-
-        tr.append("th")
-          .text(function(d) {
-            console.log(d);
-            return d.pollution_rank;
-          })
-          .style("background-color", d => cellColor(d.pollution_rank))
-          .style("font-size", 0);
-      }
-
-      $(document).ready(function() {
-        parse(sort_key);
-      });
+    <script src="render.js"></script>
+     
     </script>
   </body>
 </html>

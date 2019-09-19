@@ -145,3 +145,22 @@ p.lead {
 table.table-bordered > tbody > td {
   border: 11px solid white;
 }
+
+#pollutionClick {
+  display: none;
+}
+
+th.header {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.other-column {
+  width: 23%;
+}
+
+@media (min-width: 992px) {
+  .other-column {
+    width: 13.33%;
+  }
+}
