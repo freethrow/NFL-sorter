@@ -11,3 +11,7 @@ tr {
 body {
   background-color: #eee;
 }
+
+th.active {
+  background: red;
+}

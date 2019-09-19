@@ -18,6 +18,10 @@ beerColumn = d3.select("#beerClick");
 beerColumn.on("click", function() {
   let sort_key = "beer_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 precipitationColumn = d3.select("#precipitationClick");
@@ -25,6 +29,10 @@ precipitationColumn = d3.select("#precipitationClick");
 precipitationColumn.on("click", function() {
   let sort_key = "precipitation_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 touchdownsColumn = d3.select("#touchdownsClick");
@@ -32,6 +40,10 @@ touchdownsColumn = d3.select("#touchdownsClick");
 touchdownsColumn.on("click", function() {
   let sort_key = "touchdowns_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 ticketColumn = d3.select("#ticketsClick");
@@ -39,6 +51,10 @@ ticketColumn = d3.select("#ticketsClick");
 ticketColumn.on("click", function() {
   let sort_key = "ticket_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 generalColumn = d3.select("#generalClick");
@@ -46,6 +62,10 @@ generalColumn = d3.select("#generalClick");
 generalColumn.on("click", function() {
   let sort_key = "total_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 mcdColumn = d3.select("#mcdClick");
@@ -53,6 +73,10 @@ mcdColumn = d3.select("#mcdClick");
 mcdColumn.on("click", function() {
   let sort_key = "mcd_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 pollutionColumn = d3.select("#pollutionClick");
@@ -60,6 +84,10 @@ pollutionColumn = d3.select("#pollutionClick");
 pollutionColumn.on("click", function() {
   let sort_key = "pollution_rank";
   parse(sort_key);
+  $(".arrow").removeClass("arrow");
+  $(this)
+    .children("span")
+    .addClass("arrow");
 });
 
 // function to sort the data AND populate the table
