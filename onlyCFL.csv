@@ -1,0 +1,10 @@
+if,Team,City,League,pollution_rank,touchdowns_rank,ticket_rank,precipitation_rank,mcd_rank,beer_rank,sum_of_ranks_cfl,total_rank,id,logo
+30,Redblacks,Ottawa,CFL,1.0,5.0,6.0,6.0,6.0,6.0,30.0,4.0,30,teams/OttawaRedblacks.gif
+2,BC Lions,Vancouver,CFL,2.0,6.0,5.0,9.0,5.0,8.0,35.0,7.0,2,teams/VancouverBCLions.gif
+5,Stampeders,Calgary,CFL,3.0,1.0,9.0,2.0,8.0,7.0,30.0,5.0,5,teams/CalgaryStampeders.gif
+13,Eskimos,Edmonton,CFL,4.0,4.0,2.0,3.0,1.0,4.0,18.0,1.0,13,teams/EdmontonEskimos.gif
+24,Alouettes,Montreal,CFL,5.0,8.0,4.0,8.0,7.0,3.0,35.0,8.0,24,teams/MontrealAlouettes.gif
+40,Blue Bombers,Winnipeg,CFL,6.0,2.0,7.0,4.0,3.0,1.0,23.0,2.0,40,teams/WinnipegBlueBombers.gif
+38,Argonauts,Toronto,CFL,7.0,7.0,1.0,5.0,9.0,9.0,38.0,9.0,38,teams/TorontoArgonauts.gif
+34,Roughriders,Saskatchewan,CFL,8.0,9.0,8.0,1.0,2.0,5.0,33.0,6.0,34,teams/SaskatchewanRoughriders.gif
+15,Tiger-Cats,Hamilton,CFL,9.0,3.0,3.0,7.0,4.0,2.0,28.0,3.0,15,teams/HamiltonTigerCats.gif

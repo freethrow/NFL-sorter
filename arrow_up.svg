@@ -1,5 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 847 1058.75" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs><style type="text/css">
-   
-    .fil0 {fill:black}
-   
-  </style></defs><g><polygon class="fil0" points="423,611 149,236 297,236 423,421 550,236 698,236 "/></g><text x="0" y="862" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Muhajir ila Robbi</text><text x="0" y="867" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 100 125"
+   style="enable-background:new 0 0 100 100;"
+   xml:space="preserve"
+   id="svg3733"
+   sodipodi:docname="arrow_up.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+     id="metadata3739"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3737" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview3735"
+     showgrid="false"
+     inkscape:zoom="4.288"
+     inkscape:cx="50"
+     inkscape:cy="62.5"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3733" /><switch
+     id="switch3731"
+     transform="rotate(180,50,50)"><foreignObject
+       requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+       x="0"
+       y="0"
+       width="1"
+       height="1" /><g
+       i:extraneous="self"
+       id="g3729"><path
+         style="fill:#689736"
+         d="M 56.4,94.8 84.3,67 c 3.6,-3.6 3.6,-9.3 0,-12.9 -3.6,-3.6 -9.3,-3.6 -12.9,0 L 59.1,66.4 V 11.6 c 0,-5 -4.1,-9.1 -9.1,-9.1 -5,0 -9.1,4.1 -9.1,9.1 V 66.4 L 28.6,54.2 C 25,50.6 19.3,50.6 15.7,54.2 13.9,56 13,58.3 13,60.6 c 0,2.3 0.9,4.7 2.7,6.4 l 27.8,27.8 c 1.7,1.7 4,2.7 6.4,2.7 2.4,0 4.8,-1 6.5,-2.7 z"
+         id="path3727"
+         inkscape:connector-curvature="0" /></g></switch></svg>

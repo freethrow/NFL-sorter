@@ -142,37 +142,71 @@ table.table-bordered > tbody > td {
   border: 11px solid white;
 }
 
-#pollutionClick {
-  display: none;
-}
-
 th.header {
   overflow: hidden;
   white-space: nowrap;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
-.other-column {
-  width: 23%;
+th:hover {
+  cursor: pointer;
 }
 
-@media (min-width: 992px) {
+th.other-column {
+  width: 12%;
+}
+
+@media (max-width: 960px) {
   .other-column {
-    width: 13.33%;
+    width: 25%;
+  }
+
+  th.first-column {
+    width: 25%;
   }
 }
 
-th > span.arrow {
+table {
+  table-layout: fixed;
+}
+
+th > span.arrow_down {
   background-image: url("arrow_down.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+th > span.arrow_up {
+  background-image: url("arrow_up.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 th > span {
   padding-right: 1em;
+  white-space: nowrap;
 }
 
 .help {
   color: #7f7f7f;
   font-weight: 900;
   font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+#dropdown select {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+
+  margin-top: 1em;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  text-align: right;
 }

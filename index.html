@@ -4,138 +4,158 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>NFL</title>
+    <title>NFL data mockup</title>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="tablesorter/tsort.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <link rel="stylesheet" href="main.css" type="text/css" />
-    <link rel="stylesheet" href="tablesorter/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="design.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="header">
+          <h1 class="title">What's the best city to be an <br />
+            <span id="dropdown">     <select id="league">
+              <option value="NFL">NFL</option>
+              <option value="CFL">CFL</option>
+              <option value="all">ALL TEAMS</option>
+              
+            </select></span> fan?</h1>
+          <h3 class="grey">Based on touchdowns, beer, and ticket prices.</h3>
+          <p class="lead">
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos laboriosam minus culpa There's more to sports than
+            winning. Beer and food are also key...
+          </p>
 
-  <script type="text/javascript">
-    d3.json("data.json", function(error, data) {
-      function tabulate(data, columns) {
-        var table = d3.select("body").append("table");
-        table.attr("class", "tableSorter");
-        var thead = table.append("thead");
-        var tbody = table.append("tbody");
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="row">
+            <div class="color7 scale"><p>FIRST</p></div>
+            <div class="color6 scale"></div>
+            <div class="color5 scale"></div>
+            <div class="color4 scale"></div>
+            <div class="color3 scale"></div>
+            <div class="color2 scale"></div>
+            <div class="color1 scale"><p>LAST</p></div>
+          </div>
+          <div class="row">
+            <div class="green-left float-left">Best in category</div>
+            <div class="magenta-right ml-auto">Worst in category</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="help col-md-4 offset-md-2">Tap the icons to change the filter</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="center-cell first-column active" id="total_rank">
+                <img
+                  class="header-img mx-auto d-block"
+                  src="star.svg"
+                  alt="overall"
+                /><br />
+                <span class="arrow_down">BEST OVERALL</span>
+              </th>
+              <th
+                
+                scope="col"
+                class="center-cell other-column"
+                id="touchdowns_rank"
+                
+              >
+                <img
+                  class="header-img mx-auto d-block"
+                  src="american_football.svg"
+                  alt=""
+                /><br />
+                <span>TOUCHDOWNS</span>
+              </th>
+              <th
+                
+                scope="col"
+                class="center-cell header other-column"
+                id="ticket_rank"
+              >
+                <img
+                  class="header-img mx-auto d-block"
+                  src="ticket.svg"
+                  alt=""
+                /><br />
+                <span>TICKET PRICE</span>
+              </th>
+              <th
+                scope="col"
+                class="center-cell other-column"
+                id="precipitation_rank"
+                
+              >
+                <img
+                  class="header-img mx-auto d-block"
+                  src="rain.svg"
+                  alt="overall"
+                /><br /><span>PRECIPITATION</span>
+              </th>
+              <th
+                scope="col"
+                class="center-cell d-none d-xl-table-cell other-column"
+                id="beer_rank"
+                
+              >
+                <img class="header-img mx-auto d-block " src="beer.svg" alt="" />
+                <br /><span>BEER PRICE</span>
+              </th>
+              <th
+                scope="col"
+                class="center-cell d-none d-xl-table-cell other-column"
+                id="mcd_rank"
+                
+              >
+                <img
+                  class="header-img mx-auto d-block"
+                  src="burger.svg"
+                  alt="overall"
+                /><br /><span>McMEAL</span>
+              </th>
+              <th
+                scope="col"
+                class="center-cell d-none d-xl-table-cell other-column"
+                id="pollution_rank"
+                
+              >
+                <img
+                  class="header-img mx-auto d-block"
+                  src="pollution2.svg"
+                  alt="overall"
+                /><br /><span>POLLUTION</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
 
-        var minHrs = d3.min(data, function(d) {
-          return d["hrs"];
-        });
-
-        var maxHrs = d3.max(data, function(d) {
-          return d["hrs"];
-        });
-
-        var minRanking = d3.min(data, function(d) {
-          return d["ranking"];
-        });
-
-        var maxRanking = d3.max(data, function(d) {
-          return d["ranking"];
-        });
-
-        var minClose = d3.min(data, function(d) {
-          return d["close"];
-        });
-
-        var maxClose = d3.max(data, function(d) {
-          return d["close"];
-        });
-
-        console.log(minHrs);
-        console.log(maxHrs);
-
-        const messages = {
-          ranking: "best ranking",
-          close: "best closing",
-          hrs: "most hours"
-        };
-
-        //http://colorbrewer2.org/#type=diverging&scheme=PiYG&n=10
-        const colors = [
-          "#8e0152",
-          "#c51b7d",
-          "#de77ae",
-          "#f1b6da",
-          "#fde0ef",
-          "#e6f5d0",
-          "#b8e186",
-          "#7fbc41",
-          "#4d9221",
-          "#276419"
-        ];
-
-        colorHrs = d3.scale
-          .linear()
-          .domain([minHrs, maxHrs])
-          .interpolate(d3.interpolateHcl)
-          .range([d3.rgb("#5A9A31"), d3.rgb("#fff")]);
-
-        colorRanking = d3.scale
-          .linear()
-          .domain([minRanking, maxRanking])
-          .interpolate(d3.interpolateHcl)
-          .range([d3.rgb("#5A9A31"), d3.rgb("#fff")]);
-
-        colorClose = d3.scale
-          .linear()
-          .domain([minClose, maxClose])
-          .interpolate(d3.interpolateHcl)
-          .range([d3.rgb("#5A9A31"), d3.rgb("#fff")]);
-
-        // append the header row
-        thead
-          .append("tr")
-          .selectAll("th")
-          .data(columns)
-          .enter()
-          .append("th")
-          .text(function(column) {
-            return column;
-          });
-
-        // create a row for each object in the data
-        var rows = tbody
-          .selectAll("tr")
-          .data(data)
-          .enter()
-          .append("tr");
-
-        // create a cell in each row for each column
-        var cells = rows
-          .selectAll("td")
-          .data(function(row) {
-            return columns.map(function(column) {
-              return { column: column, value: row[column] };
-            });
-          })
-          .enter()
-          .append("td")
-          .text(function(d) {
-            if (d.value == 1) {
-              return messages[d.column];
-            } else return d.value;
-          })
-          .style("background", function(d) {
-            return colorClose(d.value);
-          });
-
-        return table;
-      }
-
-      // render the table(s)
-      tabulate(data, ["ranking", "close", "hrs"]); // 2 column table
-      $("table.tableSorter").tableSort();
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("table.tableSorter").tableSort();
-    });
-  </script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="render.js"></script>
+     
+    </script>
+  </body>
 </html>
