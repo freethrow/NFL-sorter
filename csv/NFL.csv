@@ -6,7 +6,7 @@ id,Team,City,League,pollution_rank,touchdowns_rank,ticket_rank,precipitation_ran
 35,Seattle Seahawks,Seattle,NFL,5.0,7.0,27.0,10.0,27.0,24.0,100.0,18.0,teams/SeattleSeahawks.gif
 4,Buffalo Bills,Orchard Park,NFL,6.0,29.0,1.0,17.0,13.0,7.0,73.0,6.0,teams/BuffaloBills.gif
 36,Tampa Bay Buccaneers,Tampa,NFL,7.0,11.0,10.0,22.0,25.0,4.0,79.0,8.0,teams/TampaBayBuccaneers.gif
-18,Jacksonville Jaguars,Jacksonville,NFL,8.0,32.0,3.0,31.0,12.0,8.0,94.0,15.0,teams/jacksonvilleJaguars.gif
+18,Jacksonville Jaguars,Jacksonville,NFL,8.0,32.0,3.0,31.0,12.0,8.0,94.0,15.0,teams/JacksonvilleJaguars.gif
 19,Kansas City Chiefs,Kansas City,NFL,9.0,1.0,19.0,14.0,7.0,20.0,70.0,4.0,teams/KansasCityChiefs.gif
 29,Oakland Raiders,Oakland,NFL,10.0,28.0,20.0,6.0,26.0,23.0,113.0,24.0,teams/OaklandRiders.gif
 9,Cleveland Browns,Cleveland,NFL,11.0,15.0,21.0,13.0,15.0,10.0,85.0,9.0,teams/ClevelandBrowns.gif
