@@ -1,33 +1,33 @@
 id,Team,City,League,pollution_rank,touchdowns_rank,ticket_rank,precipitation_rank,mcd_rank,beer_rank,sum_of_ranks_NFL,total_rank,logo
-14,Green Bay Packers,Green Bay,NFL,1.0,20.0,30.0,7.0,4.0,2.0,64.0,3.0,teams/GreenBayPackers.gif
-23,Minnesota Vikings,Minneapolis,NFL,2.0,19.0,15.0,8.0,5.0,22.0,71.0,5.0,teams/MinnesotaVikings.gif
-25,New England Patriots,Foxborough,NFL,3.0,4.0,32.0,25.0,29.0,30.0,123.0,28.0,teams/NewEnglandPatriots.gif
-6,Carolina Panthers,Charlotte,NFL,4.0,12.0,7.0,23.0,1.0,16.0,63.0,2.0,teams/CarolinaPanthers.gif
-35,Seattle Seahawks,Seattle,NFL,5.0,7.0,27.0,10.0,27.0,24.0,100.0,18.0,teams/SeattleSeahawks.gif
+14,Packers,Green Bay,NFL,1.0,20.0,30.0,7.0,4.0,2.0,64.0,3.0,teams/GreenBayPackers.gif
+23,Vikings,Minnesota,NFL,2.0,19.0,15.0,8.0,5.0,22.0,71.0,5.0,teams/MinnesotaVikings.gif
+25,Patriots,New England,NFL,3.0,4.0,32.0,25.0,29.0,30.0,123.0,28.0,teams/NewEnglandPatriots.gif
+6,Panthers,Carolina,NFL,4.0,12.0,7.0,23.0,1.0,16.0,63.0,2.0,teams/CarolinaPanthers.gif
+35,Seahawks,Seattle,NFL,5.0,7.0,27.0,10.0,27.0,24.0,100.0,18.0,teams/SeattleSeahawks.gif
 4,Buffalo Bills,Orchard Park,NFL,6.0,29.0,1.0,17.0,13.0,7.0,73.0,6.0,teams/BuffaloBills.gif
-36,Tampa Bay Buccaneers,Tampa,NFL,7.0,11.0,10.0,22.0,25.0,4.0,79.0,8.0,teams/TampaBayBuccaneers.gif
-18,Jacksonville Jaguars,Jacksonville,NFL,8.0,32.0,3.0,31.0,12.0,8.0,94.0,15.0,teams/JacksonvilleJaguars.gif
-19,Kansas City Chiefs,Kansas City,NFL,9.0,1.0,19.0,14.0,7.0,20.0,70.0,4.0,teams/KansasCityChiefs.gif
-29,Oakland Raiders,Oakland,NFL,10.0,28.0,20.0,6.0,26.0,23.0,113.0,24.0,teams/OaklandRiders.gif
-9,Cleveland Browns,Cleveland,NFL,11.0,15.0,21.0,13.0,15.0,10.0,85.0,9.0,teams/ClevelandBrowns.gif
-33,San Francisco 49ers,Santa Clara,NFL,12.0,24.0,14.0,5.0,31.0,29.0,115.0,25.0,teams/SanFrancisco49ers.gif
-39,Washington Redskins,Landover,NFL,13.0,30.0,23.0,16.0,28.0,25.0,135.0,29.0,teams/WashingtonRedskins.gif
-37,Tennessee Titans,Nashville,NFL,14.0,27.0,13.0,24.0,8.0,15.0,101.0,19.0,teams/TennesseeTitans.gif
-11,Denver Broncos,Denver,NFL,15.0,22.0,28.0,2.0,22.0,18.0,107.0,21.0,teams/DenverBroncos.gif
-8,Cincinnati Bengals,Cincinnati,NFL,16.0,14.0,8.0,20.0,14.0,6.0,78.0,7.0,teams/CincinnatiBengals.gif
-22,Miami Dolphins,Miami Gardens,NFL,17.0,23.0,18.0,30.0,24.0,27.0,139.0,30.0,teams/MiamiDolphins.gif
-10,Dallas Cowboys,Arlington,NFL,18.0,18.0,22.0,15.0,17.0,12.0,102.0,20.0,teams/DallasCowboys.gif
-7,Chicago Bears,Chicago,NFL,19.0,9.0,31.0,12.0,6.0,21.0,98.0,17.0,teams/ChicagoBears.gif
-17,Indianapolis Colts,Indianapolis,NFL,20.0,5.0,2.0,21.0,2.0,5.0,55.0,1.0,teams/IndianapolisColts.gif
-32,Pittsburgh Steelers,Pittsburgh,NFL,21.0,8.0,25.0,11.0,16.0,9.0,90.0,12.0,teams/PittsburghSteelers.gif
-1,Atlanta Falcons,Atlanta,NFL,22.0,10.0,11.0,27.0,9.0,13.0,92.0,13.0,teams/AtlantaFalcons.gif
-3,Baltimore Ravens,Baltimore,NFL,23.0,17.0,12.0,18.0,3.0,19.0,92.0,14.0,teams/BaltimoreRavens.gif
-26,New Orleans Saints,New Orleans,NFL,24.0,3.0,29.0,32.0,10.0,11.0,109.0,22.0,teams/NewOrleansSaints.gif
-31,Philadelphia Eagles,Philadelphia,NFL,25.0,13.0,26.0,19.0,21.0,17.0,121.0,27.0,teams/PhiladelphiaEagles.gif
-12,Detroit Lions,Detroit,NFL,26.0,25.0,17.0,9.0,11.0,1.0,89.0,11.0,teams/DetroitLions.gif
-28,New York Jets,East Rutherford,NFL,27.0,26.0,9.0,28.0,30.0,31.0,151.0,32.0,/teams/NewYorkJets.gif
-27,New York Giants,East Rutherford,NFL,28.0,21.0,5.0,29.0,32.0,32.0,147.0,31.0,/teams/NewYorkGiants.gif
-16,Houston Texans,Houston,NFL,29.0,16.0,16.0,26.0,19.0,14.0,120.0,26.0,teams/HoustonTexans.gif
-0,Arizona Cardinals,Glendale,NFL,30.0,31.0,6.0,1.0,23.0,3.0,94.0,16.0,teams/ArizonaCardinals.gif
-21,Los Angeles Rams,Los Angeles,NFL,31.0,2.0,4.0,3.0,20.0,26.0,86.0,10.0,teams/LosAngelesRams.gif
-20,Los Angeles Chargers,Carson,NFL,32.0,6.0,24.0,4.0,18.0,28.0,112.0,23.0,teams/LosAngelesChargers.gif
+36,Buccaneers,Tampa Bay,NFL,7.0,11.0,10.0,22.0,25.0,4.0,79.0,8.0,teams/TampaBayBuccaneers.gif
+18,Jaguars,Jacksonville,NFL,8.0,32.0,3.0,31.0,12.0,8.0,94.0,15.0,teams/JacksonvilleJaguars.gif
+19,Chiefs,Kansas City,NFL,9.0,1.0,19.0,14.0,7.0,20.0,70.0,4.0,teams/KansasCityChiefs.gif
+29,Raiders,Oakland,NFL,10.0,28.0,20.0,6.0,26.0,23.0,113.0,24.0,teams/OaklandRiders.gif
+9,Browns,Cleveland,NFL,11.0,15.0,21.0,13.0,15.0,10.0,85.0,9.0,teams/ClevelandBrowns.gif
+33,49ers,San Francisco,NFL,12.0,24.0,14.0,5.0,31.0,29.0,115.0,25.0,teams/SanFrancisco49ers.gif
+39,Redskins,Washington,NFL,13.0,30.0,23.0,16.0,28.0,25.0,135.0,29.0,teams/WashingtonRedskins.gif
+37,Titans,Tennessee,NFL,14.0,27.0,13.0,24.0,8.0,15.0,101.0,19.0,teams/TennesseeTitans.gif
+11,Broncos,Denver,NFL,15.0,22.0,28.0,2.0,22.0,18.0,107.0,21.0,teams/DenverBroncos.gif
+8,Bengals,Cincinnati,NFL,16.0,14.0,8.0,20.0,14.0,6.0,78.0,7.0,teams/CincinnatiBengals.gif
+22,Dolphins,Miami,NFL,17.0,23.0,18.0,30.0,24.0,27.0,139.0,30.0,teams/MiamiDolphins.gif
+10,Cowboys,Dallas,NFL,18.0,18.0,22.0,15.0,17.0,12.0,102.0,20.0,teams/DallasCowboys.gif
+7,Bears,Chicago,NFL,19.0,9.0,31.0,12.0,6.0,21.0,98.0,17.0,teams/ChicagoBears.gif
+17,Colts,Indianapolis,NFL,20.0,5.0,2.0,21.0,2.0,5.0,55.0,1.0,teams/IndianapolisColts.gif
+32,Steelers,Pittsburgh,NFL,21.0,8.0,25.0,11.0,16.0,9.0,90.0,12.0,teams/PittsburghSteelers.gif
+1,Falcons,Atlanta,NFL,22.0,10.0,11.0,27.0,9.0,13.0,92.0,13.0,teams/AtlantaFalcons.gif
+3,Ravens,Baltimore,NFL,23.0,17.0,12.0,18.0,3.0,19.0,92.0,14.0,teams/BaltimoreRavens.gif
+26,Saints,New Orleans,NFL,24.0,3.0,29.0,32.0,10.0,11.0,109.0,22.0,teams/NewOrleansSaints.gif
+31,Eagles,Philadelphia,NFL,25.0,13.0,26.0,19.0,21.0,17.0,121.0,27.0,teams/PhiladelphiaEagles.gif
+12,Lions,Detroit,NFL,26.0,25.0,17.0,9.0,11.0,1.0,89.0,11.0,teams/DetroitLions.gif
+28,Jets,New York,NFL,27.0,26.0,9.0,28.0,30.0,31.0,151.0,32.0,/teams/NewYorkJets.gif
+27,Giants,New York,NFL,28.0,21.0,5.0,29.0,32.0,32.0,147.0,31.0,/teams/NewYorkGiants.gif
+16,Texans,Houston,NFL,29.0,16.0,16.0,26.0,19.0,14.0,120.0,26.0,teams/HoustonTexans.gif
+0,Cardinals,Arizona,NFL,30.0,31.0,6.0,1.0,23.0,3.0,94.0,16.0,teams/ArizonaCardinals.gif
+21,Rams,Los Angeles,NFL,31.0,2.0,4.0,3.0,20.0,26.0,86.0,10.0,teams/LosAngelesRams.gif
+20,Chargers,Los Angeles,NFL,32.0,6.0,24.0,4.0,18.0,28.0,112.0,23.0,teams/LosAngelesChargers.gif

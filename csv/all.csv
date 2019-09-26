@@ -4,7 +4,7 @@ id,Team,City,touchdowns_rank,ticket_rank,precipitation_rank,beer_rank,mcd_rank,p
 2,BC Lions,Vancouver,29.0,5.0,31.0,29.0,28.0,3.0,125.0,21.0,teams/VancouverBCLions.gif,CFL
 23,Vikings,Minnesota,24.0,24.0,15.0,30.0,6.0,4.0,103.0,10.0,teams/MinnesotaVikings.gif,NFL
 5,Stampeders,Calgary,6.0,9.0,3.0,28.0,31.0,5.0,82.0,4.0,teams/CalgaryStampeders.gif,CFL
-25,Patriots,New England,4.0,41.0,34.0,39.0,38.0,6.0,162.0,37.0teams/NewEnglandPatriots.gif,NFL
+25,Patriots,New England,4.0,41.0,34.0,39.0,38.0,6.0,162.0,37.0,teams/NewEnglandPatriots.gif,NFL
 6,Panthers,Carolina,16.0,16.0,32.0,21.0,1.0,7.0,93.0,6.0,teams/CarolinaPanthers.gif,NFL
 35,Seahawks,Seattle,9.0,36.0,18.0,32.0,36.0,8.0,139.0,29.0,teams/SeattleSeahawks.gif,NFL
 13,Eskimos,Edmonton,12.0,2.0,4.0,16.0,5.0,9.0,48.0,1.0,teams/EdmontonEskimos.gif,CFL
