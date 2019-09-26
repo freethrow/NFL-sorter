@@ -1,11 +1,9 @@
 // sorting state
 var sort_key = "total_rank";
 var reverse = false;
-var league = "onlyCFL.csv";
+var league = "csv/NFL.csv";
 
-// helper
-var pageWidth = parseInt(d3.select(".container").style("width"), 10);
-
+// change sorting key and reverse state on column header click
 function change_state(new_sort_key) {
   if (new_sort_key == sort_key) {
     reverse = !reverse;
@@ -27,11 +25,6 @@ function makeColorScale(num_teams) {
     .domain([num_teams, middle, 1])
     .range(["#b8327d", "#f4f4f4", "#689736"]);
 }
-
-// var cellColor = d3.scale
-//   .linear()
-//   .domain([41, 21, 1])
-//   .range(["#b8327d", "#f4f4f4", "#689736"]);
 
 // bind on click events to columns
 columns = [
@@ -72,142 +65,23 @@ function sortCol(id) {
 }
 
 // Change the underlying dataset - league
-
 leagueSelector = d3.select("#league").on("change", function() {
   if (this.value == "CFL") {
-    var league = "onlyCFL.csv";
+    league = "csv/CFL.csv";
     parse("total_rank", false, league);
   }
   if (this.value == "all") {
-    var league = "ranks2.csv";
+    league = "csv/all.csv";
     parse("total_rank", false, league);
   }
 
   if (this.value == "NFL") {
-    alert("Not yet implemented! But it will work just like CFL...");
-    var league = "onlyCFL.csv";
+    league = "csv/NFL.csv";
     parse("total_rank", false, league);
   }
 });
 
-/* 
-
-precipitationColumn = d3.select("#precipitationClick");
-
-precipitationColumn.on("click", function() {
-  change_state("precipitation_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
-
-touchdownsColumn = d3.select("#touchdownsClick");
-
-touchdownsColumn.on("click", function() {
-  change_state("touchdowns_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
-
-ticketColumn = d3.select("#ticketsClick");
-
-ticketColumn.on("click", function() {
-  change_state("ticket_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
-
-generalColumn = d3.select("#generalClick");
-
-generalColumn.on("click", function() {
-  change_state("total_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
-
-mcdColumn = d3.select("#mcdClick");
-
-mcdColumn.on("click", function() {
-  change_state("mcd_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
-
-pollutionColumn = d3.select("#pollutionClick");
-
-pollutionColumn.on("click", function() {
-  change_state("pollution_rank");
-  parse(sort_key, reverse);
-  $(".arrow_up").removeClass("arrow_up");
-  $(".arrow_down").removeClass("arrow_down");
-
-  if (reverse == true) {
-    $(this)
-      .children("span")
-      .addClass("arrow_up");
-  } else {
-    $(this)
-      .children("span")
-      .addClass("arrow_down");
-  }
-});
- */
 // function to sort the data AND populate the table
-
 function parse(sort_key, reverse, league) {
   console.log("Calling parse with ", league, sort_key, reverse);
 
@@ -248,10 +122,9 @@ function render(data) {
     .append("tr");
 
   // for each column append a th
-
   tr.append("th")
     .html(function(d) {
-      first_column = `<img class="teamlogo" src="${d.logo}" alt="${d.City}" />
+      first_column = `<img class="teamlogo" src="./${d.logo}" alt="${d.City}" />
                 <span class="city-name">${d.City}</span><br />
                 <span class="team-name">${d.Team}</span>
               </th>`;
@@ -306,5 +179,5 @@ function render(data) {
 }
 
 $(document).ready(function() {
-  parse(sort_key, reverse, "ranks2.csv");
+  parse(sort_key, reverse, league);
 });

@@ -1,0 +1,42 @@
+id,Team,City,touchdowns_rank,ticket_rank,precipitation_rank,beer_rank,mcd_rank,pollution_rank,sum_of_ranks,total_rank,logo,league
+30,Redblacks,Ottawa,19.0,6.0,13.0,27.0,29.0,1.0,95.0,7.0,teams/OttawaRedblacks.gif,CFL
+14,Packers,Green Bay,25.0,39.0,12.0,2.0,4.0,2.0,84.0,5.0,teams/GreenBayPackers.gif,NFL
+2,BC Lions,Vancouver,29.0,5.0,31.0,29.0,28.0,3.0,125.0,21.0, teams/VancouverBCLions.gif,CFL
+23,Vikings,Minnesota,24.0,24.0,15.0,30.0,6.0,4.0,103.0,10.0, teams/MinnesotaVikings.gif,NFL
+5,Stampeders,Calgary,6.0,9.0,3.0,28.0,31.0,5.0,82.0,4.0, teams/CalgaryStampeders.gif,CFL
+25,Patriots,New England,4.0,41.0,34.0,39.0,38.0,6.0,162.0,37.0,teams/NewEnglandPatriots.gif,NFL
+6,Panthers,Carolina,16.0,16.0,32.0,21.0,1.0,7.0,93.0,6.0, teams/CarolinaPanthers.gif,NFL
+35,Seahawks,Seattle,9.0,36.0,18.0,32.0,36.0,8.0,139.0,29.0, teams/SeattleSeahawks.gif,NFL
+13,Eskimos,Edmonton,12.0,2.0,4.0,16.0,5.0,9.0,48.0,1.0, teams/EdmontonEskimos.gif,CFL
+4,Buffalo Bills,Orchard Park,36.0,10.0,25.0,8.0,14.0,10.0,103.0,11.0, teams/BuffaloBills.gif,NFL
+36,Buccaneers,Tampa Bay,15.0,19.0,30.0,5.0,34.0,11.0,114.0,14.0, teams/TampaBayBuccaneers.gif,NFL
+18,Jaguars,Jacksonville,41.0,12.0,40.0,9.0,13.0,12.0,127.0,22.0, teams/jacksonvilleJaguars.gif,NFL
+24, Alouettes,Montreal,38.0,4.0,16.0,15.0,30.0,13.0,116.0,16.0, teams/MontrealAlouettes.gif,CFL
+19,Chiefs,Kansas City,1.0,28.0,22.0,25.0,8.0,14.0,98.0,8.0, teams/KansasCityChiefs.gif,NFL
+29,Raiders,Oakland,35.0,29.0,10.0,31.0,35.0,15.0,155.0,33.0, teams/OaklandRiders.gif,NFL
+9, Browns,Cleveland,20.0,30.0,21.0,11.0,16.0,16.0,114.0,15.0, teams/ClevelandBrowns.gif,NFL
+40,Blue Bombers,Winnipeg,8.0,7.0,8.0,3.0,19.0,17.0,62.0,2.0, teams/WinnipegBlueBombers.gif,CFL
+33,49ers,San Francisco,31.0,23.0,9.0,38.0,40.0,18.0,159.0,35.0, teams/SanFrancisco49ers.gif,NFL
+38,Argonauts,Toronto,30.0,1.0,11.0,37.0,33.0,19.0,131.0,25.0, teams/TorontoArgonauts.gif,CFL
+39,Redskins,Washington,37.0,32.0,24.0,33.0,37.0,20.0,183.0,38.0, teams/WashingtonRedskins.gif,NFL
+37,Titans,Tennessee,34.0,22.0,33.0,20.0,9.0,21.0,139.0,30.0, teams/TennesseeTitans.gif,NFL
+11,Broncos,Denver,27.0,37.0,5.0,23.0,25.0,22.0,139.0,31.0, teams/DenverBroncos.gif,NFL
+8,Bengals,Cincinnati,18.0,17.0,28.0,7.0,15.0,23.0,108.0,12.0, teams/CincinnatiBengals.gif,NFL
+22,Dolphins,Miami,28.0,27.0,39.0,35.0,32.0,24.0,185.0,39.0, teams/MiamiDolphins.gif,NFL
+34,Roughriders,Saskatchewan,40.0,8.0,2.0,18.0,17.0,25.0,110.0,13.0, teams/SaskatchewanRoughriders.gif,CFL
+10,Cowboys,Dallas,23.0,31.0,23.0,14.0,20.0,26.0,137.0,27.0, teams/DallasCowboys.gif,NFL
+7,Bears,Chicago,13.0,40.0,20.0,26.0,7.0,27.0,133.0,26.0, teams/ChicagoBears.gif,NFL
+17,Colts,Indianapolis,5.0,11.0,29.0,6.0,2.0,28.0,81.0,3.0, teams/IndianapolisColts.gif,NFL
+32,Steelers,Pittsburgh,11.0,34.0,19.0,10.0,18.0,29.0,121.0,18.0, teams/PittsburghSteelers.gif,NFL
+1,Falcons,Atlanta,14.0,20.0,36.0,17.0,10.0,30.0,127.0,23.0, teams/AtlantaFalcons.gif,NFL
+3,Ravens,Baltimore,22.0,21.0,26.0,24.0,3.0,31.0,127.0,24.0, teams/BaltimoreRavens.gif,NFL
+26,Saints,New Orleans,3.0,38.0,41.0,12.0,11.0,32.0,137.0,28.0, teams/NewOrleansSaints.gif,NFL
+31,Eagles,Philadelphia,17.0,35.0,27.0,22.0,24.0,33.0,158.0,34.0, teams/PhiladelphiaEagles.gif,NFL
+15,Tiger-Cats,Hamilton,10.0,3.0,14.0,13.0,27.0,34.0,101.0,9.0, teams/HamiltonTigerCats.gif,CFL
+12,Lions,Detroit,32.0,26.0,17.0,1.0,12.0,35.0,123.0,19.0, teams/DetroitLions.gif,NFL
+28,Jets,New York,33.0,18.0,37.0,40.0,39.0,36.0,203.0,41.0, /teams/NewYorkJets.gif,NFL
+27,Giants,New York,26.0,14.0,38.0,41.0,41.0,37.0,197.0,40.0, /teams/NewYorkGiants.gif,NFL
+16,Texans,Houston,21.0,25.0,35.0,19.0,22.0,38.0,160.0,36.0, teams/HoustonTexans.gif,NFL
+0, Cardinals,Arizona,39.0,15.0,1.0,4.0,26.0,39.0,124.0,20.0, teams/ArizonaCardinals.gif,NFL
+21,Rams,Los Angeles,2.0,13.0,6.0,34.0,23.0,40.0,118.0,17.0, teams/LosAngelesRams.gif,NFL
+20,Chargers,Los Angeles,7.0,33.0,7.0,36.0,21.0,41.0,145.0,32.0, teams/LosAngelesChargers.gif,NFL
